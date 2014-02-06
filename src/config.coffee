@@ -5,7 +5,7 @@
 # window.citynavi should have been defined in init.coffee.
 
 # Configuration modification functions.
-#######################################
+# -------------------------------------
 
 # Merge changes into old configs or store new configs.
 citynavi.update_configs = (configs) ->
@@ -247,9 +247,34 @@ nl =
         ]
     autocompletion_providers: ["poi_categories", "osm", "bag42", "google"]
 
+citadel_geocoder_base_url = "http://78.46.41.141:8000/v1/"
+
+athens =
+    name: "Athens Region"
+    country: "gr"
+    cities: ["Athens"]
+    bbox_ne: [38.033642, 23.790850]
+    bbox_sw: [37.948921, 23.686991]
+    center: [37.991280, 23.738920]
+    hel_geocoder_address_url: citadel_geocoder_base_url + "address/"
+    hel_geocoder_poi_url: citadel_geocoder_base_url + "poi/"
+    otp_base_url: "http://78.46.41.141/otp-rest-servlet/ws/"
+    otp_router_id: "athens"
+    poi_muni_id: 30001
+    poi_providers:
+        "geocoder": [
+            {type: "hotel"}
+            {type: "museum"}
+            {type: "convention_center"}
+            {type: "parking"}
+            {type: "hospital"}
+            {type: "gallery"}
+        ]
+    autocompletion_providers: ["poi_categories", "history", "geocoder", "osm"]
+
 
 # Save and set configuration.
-#############################
+# ---------------------------
 
 citynavi.update_configs {
     defaults
@@ -257,13 +282,14 @@ citynavi.update_configs {
     manchester
     tampere
     nl
+    athens
 }
 
 citynavi.set_config("manchester")
 
 
 # Attempt to load local configuration.
-######################################
+# ------------------------------------
 #
 # Currently local_config.js is loaded in index.html. If local_config.coffee
 # has not been created, the browser can't find local_config.js and will move
