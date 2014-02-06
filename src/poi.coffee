@@ -135,6 +135,12 @@ supported_poi_categories = {
     "pub": new POICategory {type: "pub", name: "Pub", icon: "pub.svg"}
     "supermarket": new POICategory {type: "supermarket", name: "Supermarket", icon: "supermarket.svg", waag_filter: {"osm::shop": "supermarket"}}
     "restaurant": new POICategory {type: "restaurant", name: "Restaurant", icon: "restaurant.svg"}
+    "parking": new POICategory {type: "parking", name: "Parking lot", icon: "parking.svg"}
+    "hotel": new POICategory {type: "hotel", name: "Hotel", icon: "hotel.svg"}
+    "museum": new POICategory {type: "museum", name: "Museum", icon: "museum.svg"}
+    "convention_center": new POICategory {type: "convention_center", name: "Convention enter", icon: "museum.svg"}
+    "hospital": new POICategory {type: "hospital", name: "Hospital", icon: "hospital.svg"}
+    "gallery": new POICategory {type: "gallery", name: "Art gallery", icon: "art_gallery.svg"}
 }
 
 # Go through the list of POI providers and the list of categories under the POI providers:
