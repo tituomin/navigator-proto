@@ -527,6 +527,10 @@ find_route_otp = (source, target, callback) ->
         params.wheelchair = "true"
     if $('#prefer-free').attr('checked') and citynavi.config.id == "manchester"
         params.preferredRoutes = "GMN_1,GMN_2,GMN_3"
+
+    if citynavi.config.otp_router_id
+        params.routerId = citynavi.config.otp_router_id
+
     # Call plan in the OpenTripPlanner RESTful API. See:
     # # http://opentripplanner.org/apidoc/0.9.2/resource_Planner.html
     $.getJSON citynavi.config.otp_base_url + "plan", params, (data) ->
