@@ -232,7 +232,7 @@ $(document).bind "pagebeforechange", (e, data) ->
         # Try to get the current location where the user is. The location can be null if the map.locate
         # call in the routing.coffee has not, possibly yet, been successful, and in that case
         # use area center for the location.
-        current_location = citynavi.get_source_location()
+        current_location = citynavi.get_source_location_or_area_center()
         if not current_location?
             if not position_missing_alert_shown
                 alert "The device hasn't provided its current location. Using region center instead."

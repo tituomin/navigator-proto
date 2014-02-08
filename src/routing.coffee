@@ -315,6 +315,8 @@ poi_markers = []
 route_to_destination = (target_location) ->
     console.log "route_to_destination", target_location.name
     [lat, lng] = target_location.coords
+    if not sourceMarker?
+        sourceMarker = L.marker(citynavi.config.center, {draggable: true}).addTo(map)
     $.mobile.changePage("#map-page")
     target = new L.LatLng(lat, lng)
     set_target_marker(target, {description: target_location.name, zoomToFit: true})
