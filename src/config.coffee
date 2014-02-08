@@ -166,7 +166,8 @@ manchester =
     bbox_ne: [53.685760, -1.909630]
     bbox_sw: [53.327332, -2.730550]
     center: [53.479167, -2.244167]
-    otp_base_url: "http://dev.hsl.fi/manchester/opentripplanner-api-webapp/ws/"
+    otp_base_url: "http://78.46.41.141/otp-rest-servlet/ws/"
+    otp_router_id: "manchester"
     siri_url: "http://dev.hsl.fi/siriaccess/vm/json?operatorRef=GMN"
     poi_muni_id: 44001
     waag_id: "admr.uk.gr.manchester"
