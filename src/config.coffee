@@ -186,6 +186,7 @@ manchester =
             {type: "library"}
             {type: "recycling"}
             {type: "toilet"}
+            {type: "parking"}
         ]
     autocompletion_providers: ["poi_categories", "history", "osm", "google"]
 
@@ -271,7 +272,7 @@ athens =
             {type: "hospital"}
             {type: "gallery"}
         ]
-    autocompletion_providers: ["poi_categories", "history", "geocoder", "osm"]
+    autocompletion_providers: ["poi_categories", "history", "geocoder", "google"]
 
 
 # Save and set configuration.
