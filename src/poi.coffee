@@ -106,7 +106,7 @@ class WaagPOIProvider extends POIProvider
 
 supported_poi_providers = {
     "geocoder": new GeocoderPOIProvider
-    "waag": new WaagPOIProvider
+#    "waag": new WaagPOIProvider
 }
 
 class POICategory

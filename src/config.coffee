@@ -172,15 +172,15 @@ manchester =
     poi_muni_id: 44001
     waag_id: "admr.uk.gr.manchester"
     poi_providers:
-        "waag": [
-            {type: "restaurant"}
-            {type: "cafe"}
-            {type: "bar"}
-            {type: "pub"}
-            {type: "supermarket"}
-            {type: "swimming_pool"}
-            {type: "pharmacy"}
-        ],
+        # "waag": [
+        #     {type: "restaurant"}
+        #     {type: "cafe"}
+        #     {type: "bar"}
+        #     {type: "pub"}
+        #     {type: "supermarket"}
+        #     {type: "swimming_pool"}
+        #     {type: "pharmacy"}
+        # ],
         "geocoder": [
             {type: "park"}
             {type: "library"}
