@@ -138,7 +138,7 @@ supported_poi_categories = {
     "parking": new POICategory {type: "parking", name: "Parking lot", icon: "parking.svg"}
     "hotel": new POICategory {type: "hotel", name: "Hotel", icon: "hotel.svg"}
     "museum": new POICategory {type: "museum", name: "Museum", icon: "museum.svg"}
-    "convention_center": new POICategory {type: "convention_center", name: "Convention enter", icon: "museum.svg"}
+    "convention-center": new POICategory {type: "convention-center", name: "Convention center", icon: "museum.svg"}
     "hospital": new POICategory {type: "hospital", name: "Hospital", icon: "hospital.svg"}
     "gallery": new POICategory {type: "gallery", name: "Art gallery", icon: "art_gallery.svg"}
 }

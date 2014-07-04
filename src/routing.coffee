@@ -154,7 +154,7 @@ reset_map = () ->
             map.removeLayer commentMarker
             commentMarker = null
 
-        if position_point
+        if position_point and positionMarker
             zoom = Math.min(map.getBoundsZoom(position_bounds), 15)
             map.setView(position_point, zoom)
             set_source_marker(position_point, {accuracy: positionMarker.getRadius()})

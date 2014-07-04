@@ -249,7 +249,7 @@ nl =
         ]
     autocompletion_providers: ["poi_categories", "osm", "bag42", "google"]
 
-citadel_geocoder_base_url = "http://78.46.41.141:8000/v1/"
+citadel_geocoder_base_url = "http://78.46.41.141/v1/"
 
 athens =
     name: "Athens Region"
@@ -267,7 +267,7 @@ athens =
         "geocoder": [
             {type: "hotel"}
             {type: "museum"}
-            {type: "convention_center"}
+            {type: "convention-center"}
             {type: "parking"}
             {type: "hospital"}
             {type: "gallery"}

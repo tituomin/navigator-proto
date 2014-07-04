@@ -73,8 +73,8 @@ module.exports = (grunt) ->
     connect:
       server:
         options:
-          port: 9001
-          base: "."
+          port: 9002
+          base: "athens"
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
