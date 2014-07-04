@@ -515,18 +515,18 @@ find_route_otp = (source, target, callback) ->
         numItineraries: 3
     if not $('[name=usetransit]').attr('checked')
         #params.mode = $("input:checked[name=vehiclesettings]").val()
-        params.mode = "WALK"
+        params.mode = "CAR"
     else
         # always enable the following modes with transit
         # XXX we'd like to enable WALK, but TRANSIT,BICYCLE,WALK seems to mean
         # TRANSIT,WALK to OTP
         #params.mode = "FERRY,"+$("input:checked[name=vehiclesettings]").val()
-        params.mode = "WALK"
-        $modes = $("#modesettings input:checked")
-        if $modes.length == 0
-            $modes = $("#modesettings input") # all disabled means all enabled
-        for mode in $modes
-            params.mode = $(mode).attr('name')+","+params.mode
+        params.mode = "CAR"
+        # $modes = $("#modesettings input:checked")
+        # if $modes.length == 0
+        #     $modes = $("#modesettings input") # all disabled means all enabled
+        # for mode in $modes
+        #     params.mode = $(mode).attr('name')+","+params.mode
     if $('#wheelchair').attr('checked')
         params.wheelchair = "true"
     if $('#prefer-free').attr('checked') and citynavi.config.id == "manchester"
@@ -942,7 +942,7 @@ create_tile_layer = (map_config) ->
 for key, value of citynavi.config.maps
     layers[key] = create_tile_layer(value)
 
-layers["osm"].addTo(map)
+layers["mapquest"].addTo(map)
 
 # Use the leafletOsmNotes() function in file file "static/js/leaflet-osm-notes.js"
 # to create layer for showing error notes from OSM in the map.
